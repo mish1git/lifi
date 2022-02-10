@@ -2,7 +2,6 @@ import sys
 from sys import exit
 import getopt
 import os
-from pathlib import *
 p=os.getcwd()
 dirs = sorted(os.listdir(p))
 
