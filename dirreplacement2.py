@@ -1,4 +1,5 @@
 import sys
+from sys import exit
 import getopt
 import os
 from pathlib import *
@@ -15,6 +16,11 @@ while sys.argv and sys.argv[0] == '-d':
 
     if dirs == []:
         print("This directory is empty")
+
+    exit()
+
+while sys.argv and sys.argv[0] == '-h':
+    print("[lifi] Command that lists directories\n-d - Lists fils in specified directory\n-h - The help command")
 
     exit()
 
