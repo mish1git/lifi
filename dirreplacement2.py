@@ -8,7 +8,7 @@ dirs = sorted(os.listdir(p))
 
 sys.argv = sys.argv[1:]
 names = []
-while sys.argv and sys.argv[0] == '-d':
+if sys.argv and sys.argv[0] == '-d':
     dirs = sorted(os.listdir(sys.argv[1]))
 
     for file in dirs:
@@ -19,7 +19,7 @@ while sys.argv and sys.argv[0] == '-d':
 
     exit()
 
-while sys.argv and sys.argv[0] == '-h':
+if sys.argv and sys.argv[0] == '-h':
     print("[lifi] Command that lists directories\n-d - Lists fils in specified directory\n-h - The help command")
 
     exit()
